@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create account</title>
+    <link rel="stylesheet" href="css-20191015T025017Z-001\signup.css">
+</head>
+<body>
+    
+        <div class="container">
+            
+            <div class="panel">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <div class="box">
+                            <h1>REGISTRATION FORM</h1>
+                        
+                        <div class="panel-body">
+                            <form action="register.php" method="post">
+                                <div class="form-group1">
+                                    <label>Full Name</label>
+                                    <input type="text" class="form-control" name="Name">
+                                </div>
+                                <br><br>
+                                <div class="form-group2">
+                                    <label>EMAIL</label>
+                                    <input type="email" class="form-control" name="email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+                                </div>
+                                <br><br>
+                                <div class="form-group3">
+                                    <label>GENDER</label><br>
+                                    <label for="male" class="radio-inline"><input type="radio" name="gender" id="male" value="m">MALE</label>
+                                    <label for="female" class="radio-inline"><input type="radio" name="gender" id="female" value="f">FEMALE</label>
+                                    <label for="other" class="radio-inline"><input type="radio" name="gender" id="other" value="o">OTHER</label>
+                                </div>
+                                <br><br>
+                                <div class="form-group4">
+                                    <label> PASSWORD</label>
+                                    <input type="password" class="form-control" name="password" placeholder="PASSWORD" size="50"pattern="{6}">
+                                </div>
+                                <br><br>
+                                <div class="form-group5">
+                                    <label>RE-TYPE PASSWORD</label>
+                                    <input type="password" class="form-control" name="password2" size="50" pattern="{6}">
+                                    
+                                </div>
+                                <br><br>
+                                <div class="form-group6">
+                                    <label>CONTACT_NO</label>
+                                    <input type="number" class="form-control" name="contact" size="80"pattern="[789][0-9]{10}">
+                                </div>
+                                <br><br>
+                                <div class="btn">
+                                    <input type="submit" class="btn-success" >
+                                
+                                </div>
+                            </form>
+                            
+                        </div>
+                        <div class="panel-footer ">
+                            <small>&copy;SMART BIKES GUWAHATI</small>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+    </div>
+</body>
+
+</html>
+

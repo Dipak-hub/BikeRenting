@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stopwatch</title>
+    <style type="text/css">
+    body{
+        background: #2d2d2d;
+        color: #f6f6f6;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 80vh;
+    }
+
+    .stopwatch {
+        font-size: 10em;
+        font-family: monospace;
+    }
+    button{
+        background-color: red;
+        font-size: 30px;
+        font-family: fantasy;
+    }
+    </style>
+</head>
+<body onload="start()">
+<div class="controls">
+<button onclick="stop()">LOG OUT</button>
+
+</div>
+<div class="stopwatch">00:00:00</div>
+<script type="text/javascript">
+        var s = 0, m = 0, h= 0;
+        var timer;
+        var stopwatchEl = document.querySelector('.stopwatch');
+        function start() {
+            timer = setInterval(run, 1000);
+        }
+        function run() {
+            stopwatchEl.textContent = h + ":" + m + ":" + s;
+            s++;
+            if(s==60){
+                s = 0;
+                m++;
+            }
+            if(m==60){
+                m = 0;
+                h++;
+            }
+        }
+        function stop()
+        {
+           var id = $
+            if(code == 1234)
+             {
+            clearInterval(timer);
+            timer = false;
+            s = 0;
+            m = 0;
+            s = 0;
+             }
+             else
+             {
+                 document.write("Codes not matched")
+             }
+        }
+</script>
+
+</body>
+
+</html>
